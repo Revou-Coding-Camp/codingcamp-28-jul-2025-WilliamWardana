@@ -1,105 +1,148 @@
-body {
-  font-family: Arial, sans-serif;
+/* File: css/style.css */
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
-  border-bottom: 1px solid #ccc;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 .logo {
-  font-size: 32px;
+  font-size: 24px;
 }
 
-nav button {
-  margin-left: 10px;
-  padding: 6px 12px;
-  cursor: pointer;
-}
-
-.hero {
-  text-align: left;
-  padding: 30px;
-}
-
-.hero h1 {
-  margin-bottom: 5px;
-}
-
-.screen-size {
-  margin-top: 50px;
-  text-align: center;
-  color: #aaa;
-}
-
-.facility {
-  padding: 30px;
-  text-align: center;
-}
-
-.facility h2 {
-  text-align: left;
-  margin-left: 40px;
-}
-
-.cards {
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
-.card {
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00c2ff;
+}
+
+.section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
   text-align: center;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .circle {
-  width: 80px;
-  height: 80px;
-  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
   border-radius: 50%;
-  margin: 0 auto 10px;
-}
-
-.message {
   display: flex;
-  justify-content: space-between;
-  padding: 30px;
-  border-top: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-.form {
-  flex: 1;
-  margin-right: 40px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
 }
 
-.form input,
-.form textarea {
-  display: block;
+input[type="text"],
+input[type="date"],
+textarea {
   width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.gender label {
-  margin-right: 10px;
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.output {
-  flex: 1;
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-left: 1px solid #ccc;
+button:hover {
+  background-color: #00c2ff;
+  color: #000;
+}
+
+#output {
+  background-color: #eee;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  text-align: left;
 }
 
 footer {
+  background-color: #333;
+  color: white;
   text-align: center;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  font-size: 14px;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .locations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
 }

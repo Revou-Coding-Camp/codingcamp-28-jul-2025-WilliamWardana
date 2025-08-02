@@ -1,67 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <div class="logo">😃</div>
-    <nav>
-      <button>Home</button>
-      <button>Our Profile</button>
-      <button>Achievement</button>
-      <button>Message Us</button>
-    </nav>
+    <div class="container">
+      <div class="logo">🔆</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#message">Message Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Hi Harfi, Welcome To Website</h1>
-    <p>Ini adalah website latihan pertama</p>
-    <div class="screen-size">1366×678</div>
+  <section id="home" class="section">
+    <h1>Hi [Your Name], Welcome To Website</h1>
+    <p>This is my first practice website</p>
   </section>
 
-  <section class="facility">
-    <h2>Our Facilitation</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="circle"></div>
-        <p>Professional Teacher</p>
-      </div>
-      <div class="card">
-        <div class="circle"></div>
-        <p>Sport Field</p>
-      </div>
-      <div class="card">
-        <div class="circle"></div>
-        <p>Classroom</p>
-      </div>
+  <section id="profile" class="section">
+    <h2>Our Headquarter</h2>
+    <div class="locations">
+      <div class="circle">Jakarta</div>
+      <div class="circle">Bandung</div>
+      <div class="circle">Surabaya</div>
     </div>
   </section>
 
-  <section class="message">
-    <div class="form">
-      <h3>Message Us</h3>
-      <form onsubmit="handleSubmit(event)">
-        <input type="text" id="nama" placeholder="Nama" required />
-        <input type="date" id="tanggal" required />
-        <div class="gender">
-          <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
-          <label><input type="radio" name="gender" value="Perempuan" required /> Perempuan</label>
-        </div>
-        <textarea id="pesan" placeholder="Pesan" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-    <div class="output" id="output">
-      <!-- Output akan tampil di sini -->
-    </div>
+  <section id="message" class="section">
+    <h2>Message Us</h2>
+    <form id="messageForm">
+      <label>Nama: <input type="text" id="name" required></label><br>
+      <label>Tanggal Lahir: <input type="date" id="birthdate" required></label><br>
+      <label>Jenis Kelamin:</label>
+      <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+      <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label><br>
+      <label>Pesan: <textarea id="messageText" required></textarea></label><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
   </section>
 
   <footer>
-    <p>Created By RevoU</p>
+    <p>Created by [Your Name]</p>
   </footer>
 
   <script src="js/script.js"></script>
