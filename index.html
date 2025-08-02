@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">😃</div>
+    <nav>
+      <button>Home</button>
+      <button>Our Profile</button>
+      <button>Achievement</button>
+      <button>Message Us</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi Harfi, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="screen-size">1366×678</div>
+  </section>
+
+  <section class="facility">
+    <h2>Our Facilitation</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="circle"></div>
+        <p>Professional Teacher</p>
+      </div>
+      <div class="card">
+        <div class="circle"></div>
+        <p>Sport Field</p>
+      </div>
+      <div class="card">
+        <div class="circle"></div>
+        <p>Classroom</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="message">
+    <div class="form">
+      <h3>Message Us</h3>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" id="nama" placeholder="Nama" required />
+        <input type="date" id="tanggal" required />
+        <div class="gender">
+          <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+          <label><input type="radio" name="gender" value="Perempuan" required /> Perempuan</label>
+        </div>
+        <textarea id="pesan" placeholder="Pesan" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="output" id="output">
+      <!-- Output akan tampil di sini -->
+    </div>
+  </section>
+
+  <footer>
+    <p>Created By RevoU</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

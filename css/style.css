@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+nav button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: left;
+  padding: 30px;
+}
+
+.hero h1 {
+  margin-bottom: 5px;
+}
+
+.screen-size {
+  margin-top: 50px;
+  text-align: center;
+  color: #aaa;
+}
+
+.facility {
+  padding: 30px;
+  text-align: center;
+}
+
+.facility h2 {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  text-align: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.form {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.gender label {
+  margin-right: 10px;
+}
+
+.output {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
